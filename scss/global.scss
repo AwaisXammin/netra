@@ -17,3 +17,48 @@ a {
 section {
   padding: 5% 0;
 }
+
+h1 {
+  font-size: 85px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: $secondry;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 55px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  color: $secondry;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 26px;
+  line-height: 1.7;
+}
+
+.button {
+  //   background: linear-gradient(132deg, #ef661f, #480cc0);
+  background-image: linear-gradient(130deg, #ed652d, #480cba, #eb642c, #490cbb);
+  background-size: 300% 100%;
+  width: fit-content;
+
+  padding: 12px 45px;
+  font-size: 20px;
+  border-radius: 6px;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    background-position: 100% 0;
+    transition: all 0.4s ease-in-out;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+.heading-color {
+  color: #000;
+}
