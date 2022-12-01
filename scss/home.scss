@@ -184,6 +184,33 @@
   }
 }
 
+.how-it-works-section {
+  .container-fluid {
+    text-align: center;
+    .row {
+      .content {
+        box-shadow: 0px 0px 24px 0px #00000029;
+        border-radius: 10px;
+        padding: 42px 36px;
+        @media (max-width: 767px) {
+          margin-bottom: 35px;
+        }
+        .icon {
+          margin-bottom: 12px;
+          img {
+            width: 70px;
+          }
+        }
+        h4 {
+          font-weight: 600;
+          font-size: 27px;
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+}
+
 /*### Blog ###*/
 .blog-posts {
   .container-fluid {
