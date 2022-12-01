@@ -188,7 +188,7 @@
   .container-fluid {
     /*### Row ###*/
     .row {
-      width: 80%;
+      width: 95%;
       margin: 0 auto;
       @media (max-width: 1200px) {
         width: 100%;
@@ -212,7 +212,7 @@
           h3 {
             font-weight: 700;
             font-size: 24px;
-            color: $secondry;
+            color: #333;
             margin-bottom: 14px;
             transition: all 0.3s;
             &:hover {

@@ -353,7 +353,7 @@ header .btn .menu-btn:hover {
   /*### Row ###*/
 }
 .blog-posts .container-fluid .row {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 @media (max-width: 1200px) {
@@ -384,7 +384,7 @@ header .btn .menu-btn:hover {
 .blog-posts .container-fluid .row .post-grid .content h3 {
   font-weight: 700;
   font-size: 24px;
-  color: #460cc8;
+  color: #333;
   margin-bottom: 14px;
   transition: all 0.3s;
 }
