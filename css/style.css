@@ -117,6 +117,33 @@ p {
   color: #000;
 }
 
+@media (max-width: 767px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .img-txt-section .container-fluid .row .content {
+    padding: 40px 50px !important;
+  }
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 400px) {
+  section {
+    padding: 10% 0;
+  }
+  .img-txt-section .container-fluid .row .content {
+    padding: 40px 10px !important;
+  }
+}
 header {
   background: white;
   box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.1098039216);
@@ -373,6 +400,39 @@ header .btn .menu-btn:hover {
 }
 
 /*### Contact-End ###*/
+@media (max-width: 1199px) {
+  .navbar {
+    padding: 0 2% !important;
+  }
+}
+@media (max-width: 991px) {
+  .banner-section .container-fluid .row {
+    padding-top: 148px;
+  }
+}
+@media (max-width: 575px) {
+  header .navbar .logo img {
+    width: 125px;
+  }
+  .problem-statement .container-fluid .bottom-text {
+    padding: 20px 5px;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .problem-statement .container-fluid .bottom-text .text p {
+    line-height: 1.7;
+    font-size: 18px;
+  }
+  .benefits-section .container-fluid .text {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .problem-statement .container-fluid .second-text h2 {
+    padding-top: 70px;
+  }
+}
 footer {
   background: #000;
   padding-top: 5%;

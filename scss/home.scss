@@ -231,3 +231,59 @@
 }
 
 /*### Contact-End ###*/
+
+@media (max-width: 1199px) {
+  .navbar {
+    padding: 0 2% !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner-section {
+    .container-fluid .row {
+      padding-top: 148px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  header .navbar .logo img {
+    width: 125px;
+  }
+  .problem-statement {
+    .container-fluid {
+      .bottom-text {
+        padding: 20px 5px;
+        width: 95%;
+        margin: 0 auto;
+        .text {
+          p {
+            line-height: 1.7;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .benefits-section {
+    .container-fluid {
+      .text {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .problem-statement {
+    .container-fluid {
+      .second-text {
+        h2 {
+          padding-top: 70px;
+        }
+      }
+    }
+  }
+}
