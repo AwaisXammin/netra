@@ -300,6 +300,30 @@ header .btn .menu-btn:hover {
 .benefits-section .container-fluid .button {
   margin: 0 auto;
 }
+.benefits-section .container-fluid .benefits-blurb {
+  padding: 30px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1294117647);
+}
+.benefits-section .container-fluid .benefits-blurb .col-md-4 {
+  padding: 0px 30px;
+}
+.benefits-section .container-fluid .benefits-blurb .col-md-4 .content .icon {
+  margin-bottom: 19px;
+}
+.benefits-section .container-fluid .benefits-blurb .col-md-4 .content .icon img {
+  width: 64px;
+}
+.benefits-section .container-fluid .benefits-blurb .col-md-4 .content h4 {
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.benefits-section .container-fluid .benefits-blurb .col-md-4 .content p {
+  font-size: 18px;
+}
+.benefits-section .container-fluid .last-row {
+  border: none !important;
+}
 
 .expertise-section {
   background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.66)), url(../img/Expertise-bg.jpg);
@@ -324,6 +348,65 @@ header .btn .menu-btn:hover {
   padding: 0px 50px;
 }
 
+/*### Blog ###*/
+.blog-posts .container-fluid {
+  /*### Row ###*/
+}
+.blog-posts .container-fluid .row {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .blog-posts .container-fluid .row {
+    width: 100%;
+  }
+}
+.blog-posts .container-fluid .row .post-grid {
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.0901960784);
+  transition: all 0.4s;
+  /*### All-Posts ###*/
+}
+@media (max-width: 767px) {
+  .blog-posts .container-fluid .row .post-grid {
+    margin-bottom: 40px;
+  }
+}
+.blog-posts .container-fluid .row .post-grid:hover {
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.31);
+}
+.blog-posts .container-fluid .row .post-grid .content {
+  padding: 34px 42px;
+}
+.blog-posts .container-fluid .row .post-grid .content .publish-date {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.blog-posts .container-fluid .row .post-grid .content h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #460cc8;
+  margin-bottom: 14px;
+  transition: all 0.3s;
+}
+.blog-posts .container-fluid .row .post-grid .content h3:hover {
+  color: #f16700;
+}
+.blog-posts .container-fluid .row .post-grid .content p {
+  font-size: 16px;
+  margin-bottom: 26px;
+}
+.blog-posts .container-fluid .row .post-grid .content a {
+  color: #f16700;
+  border-bottom: 1px solid;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.blog-posts .container-fluid .row .post-grid .content a:hover {
+  opacity: 0.8;
+}
+
+/*### Blog-End ###*/
 /*### Contact ###*/
 .contact {
   background: #460cc8;
