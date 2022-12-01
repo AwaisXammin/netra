@@ -85,6 +85,10 @@ p {
 }
 
 @media (max-width: 400px) {
+  h1 {
+    font-size: 35px;
+    line-height: 1.2;
+  }
   section {
     padding: 10% 0;
   }

@@ -56,33 +56,6 @@
 
 .problem-statement {
   .container-fluid {
-    .second-text {
-      background: url(../img/Circle-border-bg.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top;
-      padding-bottom: 55px;
-      h2 {
-        text-align: center;
-        padding-top: 175px;
-        margin-bottom: 36px;
-      }
-      .button {
-        margin: 0 auto;
-        border: 1px solid;
-        background: none;
-        &:hover {
-          background: $secondry;
-          border-color: $secondry;
-          a {
-            color: #fff;
-          }
-        }
-        a {
-          color: #000;
-        }
-      }
-    }
     .bottom-text {
       background: #470cc4;
       padding: 46px 52px;
@@ -179,6 +152,33 @@
       }
       .content {
         padding: 0px 50px;
+      }
+    }
+    .second-text {
+      background: url(../img/Circle-border-bg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+      padding-bottom: 55px;
+      h2 {
+        text-align: center;
+        padding-top: 175px;
+        margin-bottom: 36px;
+      }
+      .button {
+        margin: 0 auto;
+        border: 1px solid;
+        background: none;
+        &:hover {
+          background: $secondry;
+          border-color: $secondry;
+          a {
+            color: #fff;
+          }
+        }
+        a {
+          color: #000;
+        }
       }
     }
   }
@@ -328,6 +328,13 @@
     .container-fluid .row {
       padding-top: 148px;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .expertise-section {
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(0 0 0 / 78%)),
+      url(../img/Expertise-bg.jpg);
   }
 }
 

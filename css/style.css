@@ -137,6 +137,10 @@ p {
   }
 }
 @media (max-width: 400px) {
+  h1 {
+    font-size: 35px;
+    line-height: 1.2;
+  }
   section {
     padding: 10% 0;
   }
@@ -250,33 +254,6 @@ header .btn .menu-btn:hover {
   -webkit-text-fill-color: transparent;
 }
 
-.problem-statement .container-fluid .second-text {
-  background: url(../img/Circle-border-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  padding-bottom: 55px;
-}
-.problem-statement .container-fluid .second-text h2 {
-  text-align: center;
-  padding-top: 175px;
-  margin-bottom: 36px;
-}
-.problem-statement .container-fluid .second-text .button {
-  margin: 0 auto;
-  border: 1px solid;
-  background: none;
-}
-.problem-statement .container-fluid .second-text .button:hover {
-  background: #460cc8;
-  border-color: #460cc8;
-}
-.problem-statement .container-fluid .second-text .button:hover a {
-  color: #fff;
-}
-.problem-statement .container-fluid .second-text .button a {
-  color: #000;
-}
 .problem-statement .container-fluid .bottom-text {
   background: #470cc4;
   padding: 46px 52px;
@@ -347,6 +324,33 @@ header .btn .menu-btn:hover {
 }
 .img-txt-section .container-fluid .row .content {
   padding: 0px 50px;
+}
+.img-txt-section .container-fluid .second-text {
+  background: url(../img/Circle-border-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-bottom: 55px;
+}
+.img-txt-section .container-fluid .second-text h2 {
+  text-align: center;
+  padding-top: 175px;
+  margin-bottom: 36px;
+}
+.img-txt-section .container-fluid .second-text .button {
+  margin: 0 auto;
+  border: 1px solid;
+  background: none;
+}
+.img-txt-section .container-fluid .second-text .button:hover {
+  background: #460cc8;
+  border-color: #460cc8;
+}
+.img-txt-section .container-fluid .second-text .button:hover a {
+  color: #fff;
+}
+.img-txt-section .container-fluid .second-text .button a {
+  color: #000;
 }
 
 /*### Blog ###*/
@@ -492,6 +496,11 @@ header .btn .menu-btn:hover {
 @media (max-width: 991px) {
   .banner-section .container-fluid .row {
     padding-top: 148px;
+  }
+}
+@media (max-width: 767px) {
+  .expertise-section {
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.78)), url(../img/Expertise-bg.jpg);
   }
 }
 @media (max-width: 575px) {
