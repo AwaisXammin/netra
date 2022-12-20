@@ -63,6 +63,24 @@ p {
   color: #000;
 }
 
+.col-12 {
+  padding: 0 30px;
+}
+
+.page-header {
+  background: $primary;
+  .container-fluid {
+    .row {
+      text-align: center;
+      padding-top: 100px;
+      color: #fff;
+      h1 {
+        color: #fff;
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
   h1 {
     font-size: 60px;
