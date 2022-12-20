@@ -7,6 +7,9 @@
         border-radius: 20px;
         padding: 26px 40px;
         margin: 0 auto;
+        @media (max-width: 496px) {
+          padding: 10px 12px;
+        }
         @media (max-width: 1199px) {
           width: 100% !important;
         }

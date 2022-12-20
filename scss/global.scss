@@ -81,6 +81,12 @@ p {
   }
 }
 
+@media (max-width: 768px) {
+  .col-12 {
+    padding-top: 18px;
+  }
+}
+
 @media (max-width: 767px) {
   h1 {
     font-size: 60px;

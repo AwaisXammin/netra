@@ -133,6 +133,11 @@ p {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .col-12 {
+    padding-top: 18px;
+  }
+}
 @media (max-width: 767px) {
   h1 {
     font-size: 60px;
@@ -575,6 +580,11 @@ header .btn .menu-btn:hover {
   border-radius: 20px;
   padding: 26px 40px;
   margin: 0 auto;
+}
+@media (max-width: 496px) {
+  .Contact .container-fluid .row .contact-form {
+    padding: 10px 12px;
+  }
 }
 @media (max-width: 1199px) {
   .Contact .container-fluid .row .contact-form {
