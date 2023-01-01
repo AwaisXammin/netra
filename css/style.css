@@ -79,7 +79,7 @@ h1 {
   font-weight: 600;
   line-height: 1;
   margin-bottom: 20px;
-  color: #460cc8;
+  color: #f16700;
 }
 
 h2 {
@@ -87,7 +87,7 @@ h2 {
   font-size: 55px;
   margin-bottom: 20px;
   line-height: 1.1;
-  color: #460cc8;
+  color: #000;
 }
 
 p {
@@ -96,21 +96,41 @@ p {
   line-height: 1.7;
 }
 
+.image img {
+  border-radius: 15px;
+}
+
 .button {
-  background-image: linear-gradient(130deg, #ed652d, #480cba, #eb642c, #490cbb);
-  background-size: 300% 100%;
+  border: 1px solid #000;
   width: fit-content;
   padding: 12px 45px;
   font-size: 20px;
-  border-radius: 6px;
-  transition: all 0.4s ease-in-out;
+  border-radius: 60px;
+  transition: 0.3s all;
 }
 .button:hover {
-  background-position: 100% 0;
-  transition: all 0.4s ease-in-out;
+  background: #000;
+}
+.button:hover a {
+  color: #fff;
 }
 .button a {
-  color: #fff;
+  color: #000;
+}
+
+.nav-item a.nav-link.active-button {
+  color: #fff !important;
+  background: #f16700;
+  border: 1px solid #f16700;
+  padding: 10px 30px !important;
+  border-radius: 60px;
+  transition: 0.3s all;
+  margin-top: 30px !important;
+}
+.nav-item a.nav-link.active-button:hover {
+  background: transparent;
+  border-color: #000;
+  color: #000 !important;
 }
 
 .heading-color {
@@ -227,9 +247,7 @@ header .btn .menu-btn:hover {
 
 /*## Banner-Section ##*/
 .banner-section {
-  background: url("../img/Banner-bg.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
+  background-image: linear-gradient(161deg, rgba(242, 127, 41, 0.1803921569), 3%, transparent);
 }
 .banner-section .container-fluid .row {
   padding-top: 86px;
@@ -246,6 +264,8 @@ header .btn .menu-btn:hover {
   margin: 0 auto;
 }
 .banner-section .container-fluid .row .content .video {
+  width: 85%;
+  margin: 0 auto;
   position: relative;
 }
 .banner-section .container-fluid .row .content .video:hover img {
@@ -261,14 +281,14 @@ header .btn .menu-btn:hover {
 }
 .banner-section .container-fluid .row .content .video .icon {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 45%;
   opacity: 0;
   transition: all 0.5s;
 }
 .banner-section .container-fluid .row .content .video .icon i {
   font-size: 110px;
-  background-image: linear-gradient(130deg, #ed652d, #480cba);
+  background: #460cc8;
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -374,13 +394,17 @@ header .btn .menu-btn:hover {
   color: #000;
 }
 
+.how-it-works-section {
+  background: #fafafa;
+}
 .how-it-works-section .container-fluid {
   text-align: center;
 }
 .how-it-works-section .container-fluid .row .content {
-  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1607843137);
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
   padding: 42px 36px;
+  background: #fff;
 }
 @media (max-width: 767px) {
   .how-it-works-section .container-fluid .row .content {

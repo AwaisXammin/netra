@@ -1,8 +1,6 @@
 /*## Banner-Section ##*/
 .banner-section {
-  background: url("../img/Banner-bg.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
+  background-image: linear-gradient(161deg, #f27f292e, 3%, transparent);
   .container-fluid {
     .row {
       padding-top: 86px;
@@ -17,6 +15,8 @@
           }
         }
         .video {
+          width: 85%;
+          margin: 0 auto;
           position: relative;
           &:hover {
             img {
@@ -35,13 +35,13 @@
           }
           .icon {
             position: absolute;
-            top: 50%;
-            left: 50%;
+            top: 40%;
+            left: 45%;
             opacity: 0;
             transition: all 0.5s;
             i {
               font-size: 110px;
-              background-image: linear-gradient(130deg, #ed652d, #480cba);
+              background: $secondry;
               background-size: 100%;
               background-repeat: repeat;
               -webkit-background-clip: text;
@@ -185,13 +185,15 @@
 }
 
 .how-it-works-section {
+  background: #fafafa;
   .container-fluid {
     text-align: center;
     .row {
       .content {
-        box-shadow: 0px 0px 24px 0px #00000029;
+        box-shadow: 0px 0px 24px 0px rgb(0 0 0 / 7%);
         border-radius: 10px;
         padding: 42px 36px;
+        background: #fff;
         @media (max-width: 767px) {
           margin-bottom: 35px;
         }
