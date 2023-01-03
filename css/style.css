@@ -100,6 +100,11 @@ p {
   border-radius: 15px;
 }
 
+.heading {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
 .button {
   border: 1px solid #000;
   width: fit-content;
@@ -295,6 +300,52 @@ header .btn .menu-btn:hover {
   -webkit-text-fill-color: transparent;
 }
 
+.simplicity-section {
+  padding: 0;
+}
+.simplicity-section .container-fluid {
+  padding: 0;
+}
+.simplicity-section .container-fluid .row .col-md-6 {
+  padding: 0;
+}
+.simplicity-section .container-fluid .row .col-md-6 .content {
+  padding: 86px 105px;
+}
+.simplicity-section .container-fluid .row .simplicity-img {
+  background: url(../img/simplicity.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.benefits-section .container-fluid .heading h2 {
+  text-align: center;
+}
+.benefits-section .container-fluid .row {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.benefits-section .container-fluid .row .content .icon {
+  margin-bottom: 26px;
+}
+.benefits-section .container-fluid .row .content .icon img {
+  width: auto;
+}
+.benefits-section .container-fluid .row .content .body-text h4 {
+  font-weight: 900;
+}
+.benefits-section .container-fluid .row .content .body-text p {
+  margin-bottom: 10px;
+}
+.benefits-section .container-fluid .row .content .body-text a {
+  color: #f16700;
+  transition: 0.3s all;
+}
+.benefits-section .container-fluid .row .content .body-text a:hover {
+  color: #666;
+}
+
 .problem-statement .container-fluid .bottom-text {
   background: #470cc4;
   padding: 46px 52px;
@@ -414,11 +465,19 @@ header .btn .menu-btn:hover {
 .how-it-works-section .container-fluid {
   text-align: center;
 }
-.how-it-works-section .container-fluid .row .content {
+.how-it-works-section .container-fluid .row {
+  margin-top: 65px;
+  gap: 40px;
+  justify-content: center;
+}
+.how-it-works-section .container-fluid .row .col-md-3 {
   box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
   padding: 42px 36px;
   background: #fff;
+}
+.how-it-works-section .container-fluid .row .content {
+  padding: 0;
 }
 @media (max-width: 767px) {
   .how-it-works-section .container-fluid .row .content {
@@ -498,75 +557,81 @@ header .btn .menu-btn:hover {
 /*### Blog-End ###*/
 /*### Contact ###*/
 .contact {
-  background: #460cc8;
+  background: #fafafa;
+  padding: 0;
+  padding-bottom: 5%;
 }
 .contact .container-fluid {
   /*### Row ###*/
 }
 .contact .container-fluid .row {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.0784313725);
+}
+.contact .container-fluid .row .column-1 {
+  background: #460bc7;
+  display: flex;
+  align-items: center;
+}
+.contact .container-fluid .row .column-2 {
+  background: #fff;
+  padding: 37px 45px;
   /*### Contact-form ###*/
 }
-.contact .container-fluid .row .contact-form {
-  width: 65%;
-  margin: 0 auto;
-}
-@media (max-width: 1199px) {
-  .contact .container-fluid .row .contact-form {
-    width: 100% !important;
-  }
-}
-.contact .container-fluid .row .contact-form .container {
+.contact .container-fluid .row .column-2 .contact-form .container {
   padding: 16px;
   /* Full-width input fields */
 }
-.contact .container-fluid .row .contact-form .container input[type=text],
-.contact .container-fluid .row .contact-form .container input[type=password],
-.contact .container-fluid .row .contact-form .container input[type=tel],
-.contact .container-fluid .row .contact-form .container textarea {
+.contact .container-fluid .row .column-2 .contact-form .container input[type=text],
+.contact .container-fluid .row .column-2 .contact-form .container input[type=password],
+.contact .container-fluid .row .column-2 .contact-form .container input[type=tel],
+.contact .container-fluid .row .column-2 .contact-form .container textarea {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
   background: transparent !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3803921569);
-  color: #fff;
+  border-bottom: 1px solid #333;
+  color: #333;
 }
-.contact .container-fluid .row .contact-form .container input[type=text]::placeholder,
-.contact .container-fluid .row .contact-form .container input[type=password]::placeholder,
-.contact .container-fluid .row .contact-form .container input[type=tel]::placeholder,
-.contact .container-fluid .row .contact-form .container textarea::placeholder {
-  color: #fff;
+.contact .container-fluid .row .column-2 .contact-form .container input[type=text]::placeholder,
+.contact .container-fluid .row .column-2 .contact-form .container input[type=password]::placeholder,
+.contact .container-fluid .row .column-2 .contact-form .container input[type=tel]::placeholder,
+.contact .container-fluid .row .column-2 .contact-form .container textarea::placeholder {
+  color: #333;
 }
-.contact .container-fluid .row .contact-form .container input[type=text]:focus,
-.contact .container-fluid .row .contact-form .container input[type=password]:focus,
-.contact .container-fluid .row .contact-form .container input[type=tel]:focus,
-.contact .container-fluid .row .contact-form .container textarea {
-  background-color: #ddd;
+.contact .container-fluid .row .column-2 .contact-form .container input[type=text]:focus,
+.contact .container-fluid .row .column-2 .contact-form .container input[type=password]:focus,
+.contact .container-fluid .row .column-2 .contact-form .container input[type=tel]:focus,
+.contact .container-fluid .row .column-2 .contact-form .container textarea {
+  background-color: #333;
   outline: none;
-  color: #fff;
+  color: #333;
 }
-.contact .container-fluid .row .contact-form .container .titles {
+.contact .container-fluid .row .column-2 .contact-form .container .titles {
   text-align: center;
 }
-.contact .container-fluid .row .contact-form .container .titles h2 {
-  color: #fff;
+.contact .container-fluid .row .column-2 .contact-form .container .titles h2 {
+  color: #333;
 }
-.contact .container-fluid .row .contact-form .container .titles p {
+.contact .container-fluid .row .column-2 .contact-form .container .titles p {
   margin-bottom: 0;
 }
-.contact .container-fluid .row .contact-form .container .button {
+.contact .container-fluid .row .column-2 .contact-form .container .button {
   margin: 0 auto;
-  border: 1px solid rgba(255, 255, 255, 0.3803921569);
-  background: none;
+  border: 1px solid #460cc8;
+  background: #460cc8;
 }
-.contact .container-fluid .row .contact-form .container .button:hover {
-  background-color: #fff;
+.contact .container-fluid .row .column-2 .contact-form .container .button:hover {
+  background-color: transparent;
+  border-color: #333;
 }
-.contact .container-fluid .row .contact-form .container .button:hover .btn {
-  color: #460cc8;
+.contact .container-fluid .row .column-2 .contact-form .container .button:hover .btn {
+  color: #333;
 }
-.contact .container-fluid .row .contact-form .container .button .btn {
+.contact .container-fluid .row .column-2 .contact-form .container .button .btn {
   color: #fff;
   font-size: 20px;
 }
@@ -610,6 +675,10 @@ header .btn .menu-btn:hover {
     padding-top: 70px;
   }
 }
+.call-to-action-sec {
+  padding: 0;
+}
+
 .pricing-section .container-fluid .text {
   text-align: center;
   margin-bottom: 45px;
@@ -699,6 +768,23 @@ header .btn .menu-btn:hover {
   display: flex;
   width: fit-content;
   margin-top: 40px;
+}
+
+.what-is-idp .container-fluid .row .column-1 {
+  padding: 30px 50px;
+}
+.what-is-idp .container-fluid .row .column-1 .content p {
+  margin: 0;
+}
+.what-is-idp .container-fluid .row .column-2 {
+  background: #ef6600;
+  padding: 30px 50px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 45px 0px rgba(239, 102, 0, 0.768627451);
+  color: #fff;
+}
+.what-is-idp .container-fluid .row .column-2 .content p {
+  margin: 0;
 }
 
 .Contact .container-fluid .row {

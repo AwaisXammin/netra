@@ -54,6 +54,64 @@
   }
 }
 
+.simplicity-section {
+  padding: 0;
+  .container-fluid {
+    padding: 0;
+    .row {
+      .col-md-6 {
+        padding: 0;
+        .content {
+          padding: 86px 105px;
+        }
+      }
+      .simplicity-img {
+        background: url(../img/simplicity.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.benefits-section {
+  .container-fluid {
+    .heading {
+      h2 {
+        text-align: center;
+      }
+    }
+    .row {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 60px;
+      .content {
+        .icon {
+          margin-bottom: 26px;
+          img {
+            width: auto;
+          }
+        }
+        .body-text {
+          h4 {
+            font-weight: 900;
+          }
+          p {
+            margin-bottom: 10px;
+          }
+          a {
+            color: $primary;
+            transition: 0.3s all;
+            &:hover {
+              color: #666;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .problem-statement {
   .container-fluid {
     .bottom-text {
@@ -204,11 +262,17 @@
   .container-fluid {
     text-align: center;
     .row {
-      .content {
+      margin-top: 65px;
+      gap: 40px;
+      justify-content: center;
+      .col-md-3 {
         box-shadow: 0px 0px 24px 0px rgb(0 0 0 / 7%);
         border-radius: 10px;
         padding: 42px 36px;
         background: #fff;
+      }
+      .content {
+        padding: 0;
         @media (max-width: 767px) {
           margin-bottom: 35px;
         }
@@ -288,69 +352,80 @@
 
 /*### Contact ###*/
 .contact {
-  background: $secondry;
+  background: #fafafa;
+  padding: 0;
+  padding-bottom: 5%;
   .container-fluid {
     /*### Row ###*/
     .row {
-      /*### Contact-form ###*/
-      .contact-form {
-        width: 65%;
-        margin: 0 auto;
-        @media (max-width: 1199px) {
-          width: 100% !important;
-        }
-        .container {
-          padding: 16px;
-          /* Full-width input fields */
-          input[type="text"],
-          input[type="password"],
-          input[type="tel"],
-          textarea {
-            width: 100%;
-            padding: 15px;
-            margin: 5px 0 22px 0;
-            display: inline-block;
-            border: none;
-            background: transparent !important;
-            border-bottom: 1px solid #ffffff61;
-            color: #fff;
-            &::placeholder {
-              color: #fff;
-            }
-          }
+      width: 90%;
+      margin: 0 auto;
+      box-shadow: 0px 0px 25px 0px #00000014;
+      .column-1 {
+        background: #460bc7;
+        display: flex;
+        align-items: center;
+      }
 
-          input[type="text"]:focus,
-          input[type="password"]:focus,
-          input[type="tel"]:focus,
-          textarea {
-            background-color: #ddd;
-            outline: none;
-            color: #fff;
-          }
-
-          .titles {
-            text-align: center;
-            h2 {
-              color: #fff;
-            }
-            p {
-              margin-bottom: 0;
-            }
-          }
-          .button {
-            margin: 0 auto;
-            border: 1px solid #ffffff61;
-            background: none;
-            &:hover {
-              background-color: #fff;
-
-              .btn {
-                color: $secondry;
+      .column-2 {
+        background: #fff;
+        padding: 37px 45px;
+        /*### Contact-form ###*/
+        .contact-form {
+          .container {
+            padding: 16px;
+            /* Full-width input fields */
+            input[type="text"],
+            input[type="password"],
+            input[type="tel"],
+            textarea {
+              width: 100%;
+              padding: 15px;
+              margin: 5px 0 22px 0;
+              display: inline-block;
+              border: none;
+              background: transparent !important;
+              border-bottom: 1px solid #333;
+              color: #333;
+              &::placeholder {
+                color: #333;
               }
             }
-            .btn {
-              color: #fff;
-              font-size: 20px;
+
+            input[type="text"]:focus,
+            input[type="password"]:focus,
+            input[type="tel"]:focus,
+            textarea {
+              background-color: #333;
+              outline: none;
+              color: #333;
+            }
+
+            .titles {
+              text-align: center;
+              h2 {
+                color: #333;
+              }
+              p {
+                margin-bottom: 0;
+              }
+            }
+            .button {
+              margin: 0 auto;
+              border: 1px solid $secondry;
+              background: $secondry;
+              &:hover {
+                background-color: transparent;
+                border-color: #333;
+
+                .btn {
+                  color: #333;
+                }
+              }
+              .btn {
+                color: #fff;
+                font-size: 20px;
+              }
             }
           }
         }
@@ -422,4 +497,8 @@
       }
     }
   }
+}
+
+.call-to-action-sec {
+  padding: 0;
 }

@@ -1,0 +1,26 @@
+.what-is-idp {
+  .container-fluid {
+    .row {
+      .column-1 {
+        padding: 30px 50px;
+        .content {
+          p {
+            margin: 0;
+          }
+        }
+      }
+      .column-2 {
+        background: #ef6600;
+        padding: 30px 50px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 45px 0px #ef6600c4;
+        color: #fff;
+        .content {
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
