@@ -63,6 +63,9 @@
         padding: 0;
         .content {
           padding: 86px 105px;
+          @media (max-width: 425px) {
+            padding: 43px 45px;
+          }
         }
       }
       .simplicity-img {
@@ -370,6 +373,10 @@
       .column-2 {
         background: #fff;
         padding: 37px 45px;
+
+        @media (max-width: 425px) {
+          padding: 19px 10px;
+        }
         /*### Contact-form ###*/
         .contact-form {
           .container {

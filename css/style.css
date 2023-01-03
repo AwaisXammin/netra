@@ -182,6 +182,12 @@ p {
     font-size: 34px;
   }
 }
+@media (max-width: 425px) {
+  .row {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 400px) {
   h1 {
     font-size: 35px;
@@ -311,6 +317,11 @@ header .btn .menu-btn:hover {
 }
 .simplicity-section .container-fluid .row .col-md-6 .content {
   padding: 86px 105px;
+}
+@media (max-width: 425px) {
+  .simplicity-section .container-fluid .row .col-md-6 .content {
+    padding: 43px 45px;
+  }
 }
 .simplicity-section .container-fluid .row .simplicity-img {
   background: url(../img/simplicity.jpg);
@@ -579,6 +590,11 @@ header .btn .menu-btn:hover {
   padding: 37px 45px;
   /*### Contact-form ###*/
 }
+@media (max-width: 425px) {
+  .contact .container-fluid .row .column-2 {
+    padding: 19px 10px;
+  }
+}
 .contact .container-fluid .row .column-2 .contact-form .container {
   padding: 16px;
   /* Full-width input fields */
@@ -757,6 +773,7 @@ header .btn .menu-btn:hover {
 .get-started-section .container-fluid .last-row {
   width: 75%;
   margin: 0 auto;
+  margin-top: 40px;
 }
 @media (max-width: 1100px) {
   .get-started-section .container-fluid .last-row {
@@ -785,6 +802,159 @@ header .btn .menu-btn:hover {
 }
 .what-is-idp .container-fluid .row .column-2 .content p {
   margin: 0;
+}
+
+.truth-idp .container-fluid .row {
+  gap: 35px;
+  justify-content: center;
+}
+.truth-idp .container-fluid .row .column {
+  border: 2px solid rgba(0, 0, 0, 0.1803921569);
+  border-radius: 18px;
+  padding: 0;
+}
+.truth-idp .container-fluid .row .column .content .icon {
+  width: fit-content;
+}
+.truth-idp .container-fluid .row .column .content p {
+  margin-bottom: 0;
+  font-weight: 500;
+  padding: 8px 53px 40px;
+}
+.truth-idp .container-fluid .row .column .left-side .icon {
+  background: #460bc7;
+  padding: 14px 30px 30px 14px;
+  border-radius: 12px 0px 136px 6px;
+}
+.truth-idp .container-fluid .row .column .left-side p {
+  text-align: right;
+}
+.truth-idp .container-fluid .row .column .right-side .icon {
+  background: #f16700;
+  margin-left: auto;
+  padding: 14px 14px 30px 30px;
+  border-radius: 0px 12px 0px 136px;
+}
+.truth-idp .container-fluid .row .column .btm-left .icon {
+  background: #f16700;
+  padding: 14px 30px 30px 14px;
+  border-radius: 0px 136px 0px 12px;
+}
+.truth-idp .container-fluid .row .column .btm-left p {
+  padding: 53px 53px 18px;
+}
+.truth-idp .container-fluid .row .column .btm-right .icon {
+  margin-left: auto;
+  padding: 30px 14px 14px 30px;
+  border-radius: 136px 0px 12px 0px;
+  background: #460bc7;
+}
+.truth-idp .container-fluid .row .column .btm-right p {
+  padding: 53px 53px 18px;
+}
+
+.solution-grid-section .container-fluid .row {
+  gap: 42px;
+  justify-content: center;
+}
+.solution-grid-section .container-fluid .row .column {
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.1803921569);
+  border-radius: 13px;
+  padding: 50px 35px;
+  align-items: center;
+  background: linear-gradient(90deg, #f16700, 15%, white, 0%, white);
+}
+@media (max-width: 425px) {
+  .solution-grid-section .container-fluid .row .column {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 28px;
+  }
+}
+.solution-grid-section .container-fluid .row .column .icon {
+  background: #ffffff;
+  height: 110px;
+  width: 110px;
+  border-radius: 92px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1098039216);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.0901960784);
+}
+.solution-grid-section .container-fluid .row .column .icon img {
+  width: auto;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  filter: invert(1);
+}
+.solution-grid-section .container-fluid .row .column .body-text {
+  width: 75%;
+  margin: 0 auto;
+}
+.solution-grid-section .container-fluid .row .column .body-text p {
+  margin-bottom: 0;
+}
+
+.netra-modules-section .container-fluid .row .content .text p {
+  margin-bottom: 7px;
+}
+.netra-modules-section .container-fluid .row .content .text h4 {
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 12px;
+}
+.netra-modules-section .container-fluid .row .content .text .icon-box {
+  display: flex;
+}
+.netra-modules-section .container-fluid .row .content .text .icon-box .icon {
+  border: 1px solid #460bc7;
+  height: 60px;
+  width: 60px;
+  border-radius: 83px;
+  position: relative;
+}
+.netra-modules-section .container-fluid .row .content .text .icon-box .icon img {
+  width: auto;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+.netra-modules-section .container-fluid .row .content .text .icon-box .text {
+  width: 88%;
+  margin: 0 auto;
+}
+.netra-modules-section .container-fluid .row .content .text .orange-border .icon {
+  border-color: #f16700;
+}
+
+.why-netra-building .container-fluid .row {
+  justify-content: center;
+  gap: 40px;
+}
+.why-netra-building .container-fluid .row .col-md-5 {
+  padding: 0;
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+  border-radius: 12px;
+  padding: 28px 35px;
+  display: flex;
+  align-items: center;
+}
+.why-netra-building .container-fluid .row .text {
+  width: 82%;
+  margin: 0 auto;
+  border-left: 1px solid #f16700;
+  padding-left: 35px;
+}
+.why-netra-building .container-fluid .row .text p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 425px) {
+  .plan-idp .container-fluid .row .content {
+    padding: 0 !important;
+  }
 }
 
 .Contact .container-fluid .row {

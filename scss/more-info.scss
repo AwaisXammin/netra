@@ -24,3 +24,198 @@
     }
   }
 }
+
+.truth-idp {
+  .container-fluid {
+    .row {
+      gap: 35px;
+      justify-content: center;
+      .column {
+        border: 2px solid #0000002e;
+        border-radius: 18px;
+        padding: 0;
+        .content {
+          .icon {
+            width: fit-content;
+          }
+          p {
+            margin-bottom: 0;
+            font-weight: 500;
+            padding: 8px 53px 40px;
+          }
+        }
+        .left-side {
+          .icon {
+            background: #460bc7;
+            padding: 14px 30px 30px 14px;
+            border-radius: 12px 0px 136px 6px;
+          }
+          p {
+            text-align: right;
+          }
+        }
+
+        .right-side {
+          .icon {
+            background: #f16700;
+            margin-left: auto;
+            padding: 14px 14px 30px 30px;
+            border-radius: 0px 12px 0px 136px;
+          }
+        }
+        .btm-left {
+          .icon {
+            background: #f16700;
+            padding: 14px 30px 30px 14px;
+            border-radius: 0px 136px 0px 12px;
+          }
+          p {
+            padding: 53px 53px 18px;
+          }
+        }
+
+        .btm-right {
+          .icon {
+            margin-left: auto;
+            padding: 30px 14px 14px 30px;
+            border-radius: 136px 0px 12px 0px;
+            background: #460bc7;
+          }
+          p {
+            padding: 53px 53px 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.solution-grid-section {
+  .container-fluid {
+    .row {
+      gap: 42px;
+      justify-content: center;
+      .column {
+        display: flex;
+        border: 2px solid #0000002e;
+        border-radius: 13px;
+        padding: 50px 35px;
+        align-items: center;
+        background: linear-gradient(90deg, #f16700, 15%, white, 0%, white);
+        @media (max-width: 425px) {
+          flex-direction: column;
+          text-align: center;
+          padding: 50px 28px;
+        }
+
+        .icon {
+          background: #ffffff;
+          height: 110px;
+          width: 110px;
+          border-radius: 92px;
+          position: relative;
+          border: 1px solid #0000001c;
+          box-shadow: 0px 0px 25px 0px #00000017;
+          img {
+            width: auto;
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            filter: invert(1);
+          }
+        }
+        .body-text {
+          width: 75%;
+          margin: 0 auto;
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.netra-modules-section {
+  .container-fluid {
+    .row {
+      .content {
+        .text {
+          p {
+            margin-bottom: 7px;
+          }
+          h4 {
+            font-weight: 800;
+            color: #000;
+            margin-bottom: 12px;
+          }
+          .icon-box {
+            display: flex;
+            .icon {
+              border: 1px solid #460bc7;
+              height: 60px;
+              width: 60px;
+              border-radius: 83px;
+              position: relative;
+              img {
+                width: auto;
+                position: absolute;
+                top: 10px;
+                left: 12px;
+              }
+            }
+            .text {
+              width: 88%;
+              margin: 0 auto;
+            }
+          }
+          .orange-border {
+            .icon {
+              border-color: #f16700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.why-netra-building {
+  .container-fluid {
+    .row {
+      justify-content: center;
+      gap: 40px;
+      .col-md-5 {
+        padding: 0;
+        background: #fff;
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 14%);
+        border-radius: 12px;
+        padding: 28px 35px;
+        display: flex;
+        align-items: center;
+      }
+
+      .text {
+        width: 82%;
+        margin: 0 auto;
+        border-left: 1px solid #f16700;
+        padding-left: 35px;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.plan-idp {
+  .container-fluid {
+    .row {
+      .content {
+        @media (max-width: 425px) {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}
