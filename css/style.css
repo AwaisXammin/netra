@@ -307,6 +307,7 @@ header .btn .menu-btn:hover {
 }
 
 .simplicity-section {
+  background: #f5f6f8;
   padding: 0;
 }
 .simplicity-section .container-fluid {
@@ -357,35 +358,6 @@ header .btn .menu-btn:hover {
   color: #666;
 }
 
-.problem-statement .container-fluid .bottom-text {
-  background: #470cc4;
-  padding: 46px 52px;
-  border-radius: 15px;
-}
-.problem-statement .container-fluid .bottom-text .text p {
-  color: #fff;
-  text-align: center;
-  line-height: 1.9;
-}
-
-.approach-section {
-  background: #f5f6f8;
-}
-.approach-section .box {
-  padding: 16px 20px;
-  border-radius: 20px;
-  margin-bottom: 8px;
-  transition: 0.3s all;
-}
-.approach-section .box:hover {
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1607843137);
-  background: #460bc7;
-  color: #fff;
-}
-.approach-section .box p {
-  margin: 0;
-}
-
 .benefits-section .container-fluid .text {
   text-align: center;
   width: 70%;
@@ -417,22 +389,6 @@ header .btn .menu-btn:hover {
 }
 .benefits-section .container-fluid .last-row {
   border: none !important;
-}
-
-.expertise-section {
-  background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.66)), url(../img/Expertise-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.expertise-section .container-fluid .row .content .text h2 {
-  color: #fff;
-}
-.expertise-section .container-fluid .row .content .text h2 .heading-color {
-  color: #460cc8;
-}
-.expertise-section .container-fluid .row .content .text p {
-  color: #fff;
 }
 
 .img-txt-section .container-fluid .row .image-column .img img {
@@ -853,6 +809,9 @@ header .btn .menu-btn:hover {
   padding: 53px 53px 18px;
 }
 
+.solution-grid-section {
+  background: #f5f6f8;
+}
 .solution-grid-section .container-fluid .row {
   gap: 42px;
   justify-content: center;
@@ -896,6 +855,9 @@ header .btn .menu-btn:hover {
   margin-bottom: 0;
 }
 
+.netra-modules-section {
+  background: #f5f6f8;
+}
 .netra-modules-section .container-fluid .row .content .text p {
   margin-bottom: 7px;
 }
@@ -955,6 +917,24 @@ header .btn .menu-btn:hover {
   .plan-idp .container-fluid .row .content {
     padding: 0 !important;
   }
+}
+
+.approach-section {
+  background: #f5f6f8;
+}
+.approach-section .box {
+  padding: 16px 20px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  transition: 0.3s all;
+}
+.approach-section .box:hover {
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1607843137);
+  background: #460bc7;
+  color: #fff;
+}
+.approach-section .box p {
+  margin: 0;
 }
 
 .Contact .container-fluid .row {
@@ -1031,6 +1011,54 @@ header .btn .menu-btn:hover {
 .Contact .container-fluid .row .contact-form .container .button .btn {
   color: #333;
   font-size: 20px;
+}
+
+.blog-page {
+  background: #fff;
+}
+.blog-page .container-fluid .post-row {
+  width: 85%;
+  margin: 0 auto;
+  background: #fafafa;
+  padding: 65px;
+}
+@media (max-width: 991px) {
+  .blog-page .container-fluid .post-row {
+    padding: 35px;
+    width: 100%;
+  }
+}
+.blog-page .container-fluid .post-row .post-content .image {
+  margin-bottom: 25px;
+}
+.blog-page .container-fluid .post-row .post-content .body {
+  padding: 19px 29px;
+}
+@media (max-width: 991px) {
+  .blog-page .container-fluid .post-row .post-content .body {
+    padding: 19px 0px;
+  }
+}
+.blog-page .container-fluid .post-row .post-content .body p {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.blog-page .container-fluid .post-row .post-content .body h2 {
+  font-size: 40px;
+}
+.blog-page .container-fluid .post-row .post-content .body .buttons .row {
+  width: 250px;
+  margin-top: 22px;
+}
+.blog-page .container-fluid .post-row .post-content .body .buttons .row a {
+  font-size: 18px;
+  transition: all 0.3s;
+  color: #1a1a1a;
+}
+.blog-page .container-fluid .post-row .post-content .body .buttons .row a:hover {
+  color: black;
+  opacity: 0.5;
+  color: black;
 }
 
 footer {
