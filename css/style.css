@@ -729,12 +729,32 @@ header .btn .menu-btn:hover {
 .get-started-section .container-fluid .last-row {
   width: 75%;
   margin: 0 auto;
-  margin-top: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1803921569);
+  margin-top: 120px;
+  padding-top: 142px;
 }
 @media (max-width: 1100px) {
   .get-started-section .container-fluid .last-row {
     width: 100%;
   }
+}
+.get-started-section .container-fluid .last-row .content {
+  background: #f16700;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .get-started-section .container-fluid .last-row .content {
+    margin-bottom: 100px;
+  }
+}
+.get-started-section .container-fluid .last-row .content .icon {
+  background: #fff;
+  width: fit-content;
+  padding: 31px;
+  border-radius: 80px;
+  margin-top: -105px;
+  border: 1px solid rgba(0, 0, 0, 0.0784313725);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1019607843);
 }
 .get-started-section .container-fluid .btn {
   margin: 40px auto;
@@ -1076,6 +1096,12 @@ footer .container-fluid .row p {
   color: rgba(255, 255, 255, 0.631372549);
   font-size: 17px;
 }
+footer .container-fluid .row p a {
+  transition: 0.3s all;
+}
+footer .container-fluid .row p a:hover {
+  color: #f16700;
+}
 footer .container-fluid .row h4 {
   color: #fff;
   font-size: 30px;
@@ -1084,12 +1110,21 @@ footer .container-fluid .row h4 {
 footer .container-fluid .row ul {
   display: flex;
 }
+@media (max-width: 768px) {
+  footer .container-fluid .row ul {
+    flex-direction: column;
+  }
+}
 footer .container-fluid .row ul li {
   font-size: 17px;
   margin-right: 14px;
 }
 footer .container-fluid .row ul li a {
   color: rgba(255, 255, 255, 0.631372549);
+  transition: 0.3s all;
+}
+footer .container-fluid .row ul li a:hover {
+  color: #f16700;
 }
 footer .container-fluid .row .bottom-row {
   border-top: 1px solid rgba(255, 255, 255, 0.5294117647);

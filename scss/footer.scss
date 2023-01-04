@@ -13,6 +13,12 @@ footer {
       p {
         color: #ffffffa1;
         font-size: 17px;
+        a {
+          transition: 0.3s all;
+          &:hover {
+            color: $primary;
+          }
+        }
       }
       h4 {
         color: #fff;
@@ -21,11 +27,18 @@ footer {
       }
       ul {
         display: flex;
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
         li {
           font-size: 17px;
           margin-right: 14px;
           a {
             color: #ffffffa1;
+            transition: 0.3s all;
+            &:hover {
+              color: $primary;
+            }
           }
         }
       }
